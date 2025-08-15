@@ -1,6 +1,26 @@
 #include<iostream>
 using namespace std;
 
+
+
+
+void crossing()
+{
+    cout <<"\nDid you find a crossing?(yes/no)\n";
+    string cross;
+    cin>>cross;
+    if(cross=="yes")
+    {
+        cout<<"\nCheckin the traffic lights\n";
+        trafficLights();
+    }
+    else
+    {
+        cout<<"\nWalk away a few distance and check for any other way of crossing\n";
+        footBridge();
+    }
+}
+
 void tunnel()
 {
     cout <<"\nDid you find a tunnel?(yes/no)\n";
@@ -37,5 +57,5 @@ int main()
 {
     cout<<"Strat of the program\n";
     footBridge();
-    cout<<"End of the program\n";
+    cout<<"\nEnd of the program\n";
 }
