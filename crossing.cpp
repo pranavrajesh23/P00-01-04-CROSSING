@@ -1,8 +1,42 @@
 #include<iostream>
 using namespace std;
 
+void rightApproach()
+{
+    cout<<"Looking for any cars approaching from the right\n";
+    cout <<"\nDid you find any cars approaching from the right?(yes/no)\n";
+    string right;
+    cin>>right;
+    if(right=="yes")
+    {
+        cout<<"\nWait for the cars to pass\n";
+        cout<<"\nWait for a while\n";
+        leftApproach();
+    }
+    else
+    {
+        cout<<"\nNo cars approaching from the right\nCrossed the traffic successfully\n";
+    }
+}
 
-
+void leftApproach()
+{
+    cout<<"Looking for any cars approaching from the left\n";
+    cout <<"\nDid you find any cars approaching from the left?(yes/no)\n";
+    string left;
+    cin>>left;
+    if(left=="yes")
+    {
+        cout<<"\nWait for the cars to pass\n";
+        cout<<"\nWait for a while\n";
+        leftApproach();
+    }
+    else
+    {
+        cout<<"\nNo cars approaching from the left\n";
+        rightApproach();
+    }
+}
 
 void color()
 {
