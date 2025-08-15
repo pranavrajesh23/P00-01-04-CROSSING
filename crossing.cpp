@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+
+void leftApproach();
+void footBridge();
+
 void rightApproach()
 {
     cout<<"Looking for any cars approaching from the right\n";
