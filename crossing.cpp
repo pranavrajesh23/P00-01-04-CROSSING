@@ -1,6 +1,22 @@
 #include<iostream>
 using namespace std;
 
+void tunnel()
+{
+    cout <<"\nDid you find a tunnel?(yes/no)\n";
+    string tunnel;
+    cin>>tunnel;
+    if(tunnel=="yes")
+    {
+        cout<<"\nUse the tunnel\ncrossed successfully\n";
+    }
+    else
+    {
+        cout<<"\nDidnt find any tunnel\n";
+        crossing();
+    }
+}
+
 void footBridge()
 {
     cout <<"\nDid you find a footbridge?(yes/no)\n";
